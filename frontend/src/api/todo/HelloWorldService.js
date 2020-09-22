@@ -1,16 +1,16 @@
 import axios from 'axios';
 class HelloWorldService {
     executeHelloWorldService() {
-        return axios.get('https://springboot-react-todoapps.herokuapp.com:8080/hello');
+        return axios.get('https://springboot-react-todoapps.herokuapp.com/hello');
     }
     getListTodos() {
-        return axios.get('https://springboot-react-todoapps.herokuapp.com:8080/todos');
+        return axios.get('https://springboot-react-todoapps.herokuapp.com/todos');
     }
     getError() {
-        return axios.get('https://springboot-react-todoapps.herokuapp.com:8080/error');
+        return axios.get('https://springboot-react-todoapps.herokuapp.com/error');
     }
     deleteItem(id) {
-        return axios.delete(`https://springboot-react-todoapps.herokuapp.com:8080/todos/${id}`);
+        return axios.delete(`https://springboot-react-todoapps.herokuapp.com/todos/${id}`);
     }
 }
 
